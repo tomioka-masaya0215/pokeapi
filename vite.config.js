@@ -1,7 +1,7 @@
 import { defineConfig } from "vite"
 
 export default defineConfig({
-  base: "/api-test",
+  base: "/step23",
   build: {
     assetsDir: "./assets",
   },
