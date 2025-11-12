@@ -1,16 +1,4 @@
 # Overview
 STEP23ホームワーク
-
-# 動作画面
-![キャプチャ画像](./img.png)
-http://localhost:5173/
-
-# 使用技術
-- Node.js
-- [Vite](https://ja.vitejs.dev/)
-- [axios](https://www.npmjs.com/package/axios)
-- [PokeAPI](https://pokeapi.co/)
-
-# 実行方法
-1. npm install
-2. npm run dev
+アレンジ箇所は、ヘッダー見出しのフォント
+検索時にポケモンの鳴き声が再生されるようにしたところ
