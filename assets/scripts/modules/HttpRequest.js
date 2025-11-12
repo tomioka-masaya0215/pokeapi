@@ -1,11 +1,12 @@
 import axios from 'axios';
 
+// インスタンスを定数化
 const instance = axios.create({
   baseURL: 'https://pokeapi.co/api/v2/pokemon/',
   timeout: 1000,
 });
 
-// instance
+// pokeAPIのgetメソッドでポケモンの情報を取得
 export const getPokemonData = async (pokeName) => {
   try {
     const response = await instance.get(pokeName); //fixed

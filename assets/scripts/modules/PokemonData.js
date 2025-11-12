@@ -1,3 +1,4 @@
+// PokeAPIから取得した元データから利用するデータを抽出
 export const extractData = (pokemonData) => {
   const id = pokemonData.id;
   const name = pokemonData.name;
@@ -10,6 +11,7 @@ export const extractData = (pokemonData) => {
   return {id, name, img, types, cries}
 }
 
+// 抽出データをHTMLタグに変換
 export const showData = (data) => {
   const htmlData = `<dl>
     <dt>Name: ${data.name}</dt>
@@ -20,8 +22,8 @@ export const showData = (data) => {
   document.querySelector("#js-result").innerHTML = htmlData;
 }
 
-//検索したポケモンの鳴き声を再生。
-export const cryPokemon = (data) => {
+// 検索したポケモンの鳴き声を再生。
+export const cryPokemon = (data) => {　
   const audioContext = new ( window.AudioContext || (window).webkitAudioContext )();
   fetch(`${data.cries}`)
     .then(response => response.arrayBuffer())
